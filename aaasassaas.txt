@@ -1,1 +1,2 @@
-"onclick=prompt(8)>"@x.y
+"-prompt(8)-"
+'-prompt(8)-'
