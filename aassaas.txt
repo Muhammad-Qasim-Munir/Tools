@@ -1,1 +1,0 @@
-"onclick=prompt(8)><svg/onload=prompt(8)>"@x.y
